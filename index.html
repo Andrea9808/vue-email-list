@@ -11,11 +11,12 @@
     
     <div id="app">
 
-        <ul>
+        <ul v-if = "mails.length === 10">
             <li v-for="mail in mails" :key="mail">
                 {{mail}}
             </li>
         </ul>
+        <h2 v-else>Caricamento...</h2>
 
     </div>
 
